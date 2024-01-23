@@ -1,0 +1,45 @@
+tasks=[]
+
+def add_task():
+ print('Enter the Task=')
+ task=(input())
+ tasks.append(task)
+ print('Task added')
+ 
+def delete_task():
+ print('Enter Task to be deleted=')
+ task=(input())
+ if task in tasks:
+  tasks.remove(task)
+  print('Task deleted  succesfully.')
+ else:
+  print('Task not found.')
+  
+def view_tasks():
+ print('Tasks=')
+ for i, task in enumerate(tasks):
+  print(str(i+1)+'.'+task)
+  
+  
+def show_menu():
+ print('\nChoice=')
+ print('1.Add Task')
+ print('2.Delete Task')
+ print('3.View Tasks')
+ print('4.Quit')
+ 
+while True:
+ show_menu()
+ print('Enter your choice')
+ choice=(input())
+ 
+ if choice =='1':
+  add_task()
+ elif choice =='2':
+  delete_task()
+ elif choice =='3':
+  view_tasks()
+ elif choice == '4':
+  break
+ else:
+  print('Invalid choice:')
