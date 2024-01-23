@@ -1,5 +1,8 @@
 # Calculator-in-python-programming-
-Python program for calculator 
+Python program for calculator
+
+
+ 
 print('Enter type of operation select corresponding number:')
 A=input('1.multiply,2.subtract,3.add,4.divide,5.reminder')
 print('Enter first number:')
